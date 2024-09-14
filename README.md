@@ -1,16 +1,12 @@
-# east_star_g1_test_app
+# East Star G1 Quiz App
 
-A new Flutter project.
+The **East Star G1 Quiz App** is a comprehensive study tool designed to help aspiring drivers prepare for the Ontario G1 written test. This app provides a range of practice questions based on the official G1 exam, offering users an interactive and efficient way to review essential driving concepts and rules of the road.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- **Comprehensive Question Bank**: Access a wide range of questions covering topics such as traffic signs, road rules, and safe driving practices.
+- **Real-time Feedback**: Receive immediate feedback on your answers to help identify areas for improvement.
+- **Progress Tracking**: Monitor your progress over time with detailed statistics on performance.
+- **User-Friendly Interface**: A simple and intuitive interface that makes navigating the app and taking quizzes seamless.
+- **Offline Access**: Practice anywhere, anytime, even without an internet connection.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
