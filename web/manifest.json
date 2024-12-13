@@ -1,11 +1,11 @@
 {
-    "name": "east_star_g1_test_app",
-    "short_name": "east_star_g1_test_app",
+    "name": "eaststarg1testapp",
+    "short_name": "eaststarg1testapp",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "East Star Driving - New G1 Quiz App",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

@@ -1,0 +1,27 @@
+[
+    {
+      "type": "text",
+      "content": "What does this sign mean?",
+      "answers": [
+        "Stop",
+        "Yield",
+        "Speed Limit 50",
+        "No U-Turn"
+      ],
+      "correctAnswer": "Stop",
+      "explanation": "This is a stop sign. You must come to a full stop and yield to other traffic."
+    },
+    {
+      "type": "image",
+      "content": "assets/images/yield_sign.png",
+      "answers": [
+        "Stop",
+        "Yield",
+        "Speed Limit 50",
+        "No U-Turn"
+      ],
+      "correctAnswer": "Yield",
+      "explanation": "A yield sign indicates that you must slow down and give the right of way to other vehicles."
+    }
+  ]
+  
