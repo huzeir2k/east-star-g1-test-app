@@ -1,0 +1,80 @@
+{
+    "categories": [
+      {
+        "name": "Road Signs",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What does this road sign mean?",
+            "image": "assets/images/stop_sign.png",
+            "options": [
+              "Stop and proceed when safe",
+              "Yield to pedestrians",
+              "No stopping at any time",
+              "Traffic light ahead"
+            ],
+            "correct_option": 0
+          },
+          {
+            "id": 2,
+            "question": "What does this sign indicate?",
+            "image": "assets/images/merge_sign.png",
+            "options": [
+              "Road merges ahead",
+              "Right lane ends",
+              "No entry",
+              "One-way traffic"
+            ],
+            "correct_option": 0
+          }
+        ]
+      },
+      {
+        "name": "Rules of the Road",
+        "questions": [
+          {
+            "id": 3,
+            "question": "When approaching a pedestrian crosswalk with pedestrians waiting to cross, what must you do?",
+            "image": null,
+            "options": [
+              "Slow down and proceed carefully",
+              "Stop and yield the right of way to pedestrians",
+              "Honk to alert pedestrians",
+              "Continue driving as you have the right of way"
+            ],
+            "correct_option": 1
+          },
+          {
+            "id": 4,
+            "question": "What is the maximum speed limit in a school zone when children are present?",
+            "image": null,
+            "options": [
+              "30 km/h",
+              "40 km/h",
+              "50 km/h",
+              "60 km/h"
+            ],
+            "correct_option": 1
+          }
+        ]
+      },
+      {
+        "name": "Vehicle Maintenance",
+        "questions": [
+          {
+            "id": 5,
+            "question": "What should you do if your brakes fail while driving?",
+            "image": null,
+            "options": [
+              "Pump the brake pedal several times",
+              "Turn off the engine immediately",
+              "Accelerate to use the engine to slow down",
+              "Sound the horn to alert other drivers"
+            ],
+            "correct_option": 0
+          }
+        ]
+      }
+    ]
+  }
+  

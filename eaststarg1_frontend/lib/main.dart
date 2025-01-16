@@ -1,45 +1,25 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'controllers/user_controller.dart';
-import 'views/user_list_view.dart';
+import './views/login_screen.dart'; // Import the login screen
+import './views/signin_screen.dart';
 
 void main() {
-  runApp(
-    MultiProvider(
-      providers: [
-        ChangeNotifierProvider(create: (_) => UserController()),
-      ],
-      child: MyApp(),
-    ),
-  );
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: UserPage(),
-    );
-  }
-}
-
-class UserPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    final userController = Provider.of<UserController>(context);
-
-    return Scaffold(
-      appBar: AppBar(title: Text('Users')),
-      body: userController.isLoading
-          ? Center(child: CircularProgressIndicator())
-          : UserListView(users: userController.users),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          userController.fetchUsers();
-        },
-        child: Icon(Icons.refresh),
+      debugShowCheckedModeBanner: false, // Disable the debug banner
+      title: 'East Star Driving School',
+      theme: ThemeData(
+        primarySwatch: Colors.green, // Optional: Set a theme color
       ),
+      home: LoginScreen(), // Set LoginScreen as the first screen
+      routes: {
+        '/signin': (context) =>
+            SignInPage(), // Define the route for the sign-in page
+      },
     );
   }
 }
