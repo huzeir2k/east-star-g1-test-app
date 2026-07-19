@@ -11,12 +11,12 @@ class LoginScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             // Image at the top
-            Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Image.asset(
-                'assets/traffic_light.png', // Replace with your image path
-                height: 150,
-                width: 150,
+            const Padding(
+              padding: EdgeInsets.all(16.0),
+              child: Icon(
+                Icons.traffic,
+                size: 150,
+                color: Colors.green,
               ),
             ),
 

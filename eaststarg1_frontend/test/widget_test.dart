@@ -5,26 +5,25 @@
 // gestures. You can also use WidgetTester to find child widgets in the widget
 // tree, read text, and verify that the values of widget properties are correct.
 
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:eaststarg1_frontend/main.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
+  testWidgets('Login screen shows sign in and register options',
+      (WidgetTester tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(MyApp());
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+    // The login screen should be the first thing the user sees.
+    expect(find.text('Sign in or register below:'), findsOneWidget);
+    expect(find.text('Sign in with...'), findsOneWidget);
+    expect(find.text('Register'), findsOneWidget);
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
+    // Tapping "Sign in with..." should navigate to the sign-in provider page.
+    await tester.tap(find.text('Sign in with...'));
+    await tester.pumpAndSettle();
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+    expect(find.text('Sign in manually'), findsOneWidget);
   });
 }

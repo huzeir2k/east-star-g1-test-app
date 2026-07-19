@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import './views/login_screen.dart'; // Import the login screen
 import './views/signin_screen.dart';
+import './views/register_page.dart';
+import './views/manual_signin_screen.dart';
+import './views/home_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,8 +20,10 @@ class MyApp extends StatelessWidget {
       ),
       home: LoginScreen(), // Set LoginScreen as the first screen
       routes: {
-        '/signin': (context) =>
-            SignInPage(), // Define the route for the sign-in page
+        '/signin': (context) => SignInPage(),
+        '/register': (context) => RegistrationForm(),
+        '/manual_signin': (context) => const ManualSignInScreen(),
+        '/home': (context) => const HomeScreen(),
       },
     );
   }

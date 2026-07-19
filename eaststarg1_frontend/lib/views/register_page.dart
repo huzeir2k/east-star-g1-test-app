@@ -12,7 +12,7 @@ class _RegistrationFormState extends State<RegistrationForm> {
   final TextEditingController _phoneController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
 
-  void _register() {
+  void _register() async {
     if (_formKey.currentState!.validate()) {
       // Simulate verification link logic
       ScaffoldMessenger.of(context).showSnackBar(
@@ -20,7 +20,9 @@ class _RegistrationFormState extends State<RegistrationForm> {
             content:
                 Text('Verification link sent to ${_emailController.text}')),
       );
-      // Navigate to another screen or handle backend logic here
+      await Future.delayed(const Duration(seconds: 1));
+      if (!mounted) return;
+      Navigator.pushNamedAndRemoveUntil(context, '/home', (route) => false);
     }
   }
 
